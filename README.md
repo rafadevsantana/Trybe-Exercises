@@ -1,4 +1,4 @@
-Readme descritivo da Aula de shell-scrpti contendo os exercicios realizados no bloco    
+Readme descritivo da Aula de shell-script    
 
 
                           1 . Escreva um Shell Script que imprima na tela a frase:
