@@ -1,0 +1,68 @@
+.top {
+    background-image: url(/uw-2010-06-11.jpg);
+    background-repeat: no-repeat;
+    width: 80vh;
+    height: 40vh;
+    margin: auto;
+    border-radius: 20px;    
+}
+.top h1 {
+    text-align: center;
+    line-height: 40vh;
+    color: aliceblue;
+    font-size: 25pt;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 4px black;
+}
+.nav {
+    background-color: #CC4C43;
+    width: 80vh;
+    height: 4vh;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: -10px;
+     
+}
+.nav li  {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 100px;    
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size:15pt ;
+    padding: 8px;
+    margin-top: 10px;
+    
+}
+.nav li a:hover {
+    
+    color: teal;
+    transition-duration: .3s;
+}
+
+/*ARTICO*/
+
+.art {
+    width: 80vh;
+    height: 100vh;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #5a5a5a;
+     
+}
+.art h2 {
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+.art p {
+    color: whitesmoke;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
