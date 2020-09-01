@@ -7,6 +7,7 @@
 
 const peca= "bispo" 
 
+
 if (peca == "piao"){
     console.log("para todos os lados menos para diagonais, uma casa por vez")
 }
