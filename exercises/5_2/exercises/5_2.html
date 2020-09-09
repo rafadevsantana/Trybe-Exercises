@@ -87,16 +87,12 @@
         divLeft.appendChild(img);
       //exercicio 8
     let listUl = document.createElement('ul');
-        divRigth.appendChild(listUl)
-    
-    let listNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
-
-    for (i = 0; i < listNumbers.length;i += 1){
-        let listLiItens = listNumbers[i]
-        
-        let listLi = document.createElement('li')
-        listLi.innerHTML = listLiItens;
-        listUl.appendChild = listLi 
+        listUl.appendChild(divRigth)
+    let numeberList = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
+    for(let i in numeberList){
+      let listLi = document.createElement('li')
+      listLi.innerHTML = numeberList[i]
+      listUl.appendChild(listLi)
     }
 
         
