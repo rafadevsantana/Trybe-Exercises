@@ -1,0 +1,36 @@
+<! DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title> </title>
+    </head>
+
+    <body>
+
+        <h1> Mad Libs </h1>
+
+        <ul>
+            <li> Substantivo: <input type="text" id="noun">
+            <li> Adjetivo: <input type="text" id="adjective">
+            <li> Nome de alguém: <input type="text" id="person">
+        </ul>
+
+        <button id="lib-button"> Libere! </button>
+
+        <div id="story"> </div>
+        <script>
+            let button = document.querySelector('#lib-button')
+            let sub = document.querySelector('#noun')
+            let adjective = document.querySelector('#adjective')
+            let name = document.querySelector('#person')
+            let story = document.querySelector('#story')
+
+            button.addEventListener('click',function(){
+                story.innerHTML = `${name.value} realmente gosta de ${sub.value} das cores ${adjective.value}`
+            })
+
+        </script>
+    </body>
+
+    </html>
