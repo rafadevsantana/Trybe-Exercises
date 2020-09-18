@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+<body>
+    <header>
+        <section class="section">
+           <h1 class="title">Formulario Curriculum</h1> 
+        </section>
+        
+    </header>
+    <section>
+        <form action="">
+            <div class="field">
+                <label class="label" for="nome" >Nome:</label>
+                <div class="control">
+                    <input class="input is-primary" type="text" name="nome" placeholder="Digite seu Nome" maxlength="40" id="nome" required="required">
+                </div> 
+            </div>
+            <div class="field">
+                <label class="label" for="email">Email:</label>
+                <div class="control">
+                     <input class="input" type="email" name="email" placeholder="Digite seu Email" maxlength="50" id="email" required="required">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="cpf">CPF:</label>
+                <div class="control">
+                    <input class="input" type="text" name="cpf" maxlength="11" placeholder="Digete seu CPF" id="cpf" required="required">  
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="city">Cidade:</label>
+                <div class="control">
+                    <input class="input" type="text" name="cidade" placeholder="Digite sua cidade" maxlength="28" id="cidade" required="required">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="estados">Estado:</label>
+                <div class="control">
+                    <select class="select is-primary" name="estado" id="estados" required="required"></select>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input type="radio" name="moradia" id="casa" required="required">
+                    <label class="radio" for="casa">Casa</label>
+                    <input type="radio" name="moradia" id="apartamento" required="required">
+                    <label class="radio" for="apartamento">Apartamento</label>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="resumo">Resumo do Curriculum</label>
+                <div class="control">
+                    <textarea class="textarea is-info" name="resumo" id="resumo" maxlength="1000" required="required"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="cargo">Cargo</label>
+                <div class="control">
+                    <input class="input" type="text" name="cargo" maxlength="40" required="required" id="cargo">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="descrition">Descrição do Cargo</label>
+                <div class="control">
+                    <input class="input is-info" type="text" name="discricao" id="descrition" maxlength="500" required="required">
+                </div>
+            </div>
+
+                   
+                   
+                
+                
+                    
+                    
+                
+                
+                    
+                    
+                
+                
+                    <label for="data">data de inicio</label>
+                    <input type="text" name="data" id="data">
+                
+                
+                    <button type="submit" class="button">submit</button>
+                
+                
+                    <button class="clear" value="Reset">Limpar</button>
+                
+                
+          <script src="script.js"></script>         
+        </form>
+    </section>    
+    
+
+
+</html>
+</body>
