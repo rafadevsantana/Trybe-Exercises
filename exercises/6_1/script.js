@@ -33,3 +33,20 @@ for(const index in estados){
     option = new Option(estados[index], index);
     states.options[states.options.length] = option;
 }
+
+const subButton = document.querySelector('.button').addEventListener('click',function(event){
+    event.preventDefault()
+    dataValue = document.getElementById('data').value
+    dataArr = dataValue.split("/")
+
+    if(parseInt(dataArr[0]) <= 0 || parseInt(dataArr[0]) > 31){
+        alert('Dia Inexistente')
+    }
+    if(parseInt(dataArr[1]) <= 0 || parseInt(dataArr[1]) > 12){
+        alert('Mes Inexistente')
+    }
+})
+
+    const resumo = document.getElementsByTagName('input').addEventListener('keyup',function(){
+        document.querySelector('.resumo').innerHTML = resumo
+    })

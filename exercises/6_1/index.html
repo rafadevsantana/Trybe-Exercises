@@ -11,41 +11,65 @@
         <h1>Formulario Curriculum</h1>
     </header>
     <section>
+        <form action="">
         <fieldset>
             <legend>Dados Pessoais</legend>
-            <div class="form-vitae">
-                <label for="nome" >Nome:</label>
-                <input type="text" name="" placeholder="Digite seu Nome" maxlength="40" id="nome" required="required">
-            </div>
-            <div class="form-vitae">
-                <label for="email">Email:</label>
-                <input type="email" name="" placeholder="Digite seu Email" maxlength="50" id="email" required="required">
-            </div>
-            <div class="form-vitae">
-                <label for="cpf">CPF:</label>
-                <input type="text" name="" maxlength="11" placeholder="Digete seu CPF" id="cpf" required="required">            
-            </div>
-            <div class="form-vitae">
-                <label for="city">Cidade:</label>
-                <input type="text" name="" placeholder="Digite sua cidade" maxlength="28" id="cidade" required="required">
-            </div>
-            <div class="form-vitae">
-                <label for="estados">Estado:</label>
-                <select name="" id="estados" required="required"></select>
-            </div>
-            <div class="form-vitae">
-                <input type="radio" name="moradia" id="casa" required="required">
-                <label for="casa">Casa</label>
-                <input type="radio" name="moradia" id="apartamento" required="required">
-                <label for="apartamento">Apartamento</label>
-            </div>    
-        </fieldset>
-        <fieldset>
-            <label for="resumo">Resumo do Curriculum</label><br>
-            <textarea name="" id="resumo" maxlength="1000" required="required"></textarea><br>
-            <label for="cargo">Cargo</label>
-            <input type="text" name="" maxlength="500" required="required" id="cargo"><br>
-
+            
+                <div class="form-vitae">
+                    <label for="nome" >Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu Nome" maxlength="40" id="nome" required="required">
+                </div>
+                <div class="form-vitae">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Digite seu Email" maxlength="50" id="email" required="required">
+                </div>
+                <div class="form-vitae">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" maxlength="11" placeholder="Digete seu CPF" id="cpf" required="required">            
+                </div>
+                <div class="form-vitae">
+                    <label for="city">Cidade:</label>
+                    <input type="text" name="cidade" placeholder="Digite sua cidade" maxlength="28" id="cidade" required="required">
+                </div>
+                <div class="form-vitae">
+                    <label for="estados">Estado:</label>
+                    <select name="estado" id="estados" required="required"></select>
+                </div>
+                <div class="form-vitae">
+                    <input type="radio" name="moradia" id="casa" required="required">
+                    <label for="casa">Casa</label>
+                    <input type="radio" name="moradia" id="apartamento" required="required">
+                    <label for="apartamento">Apartamento</label>
+                </div>    
+            </fieldset>
+            <fieldset>
+                <div class="form-vitae">
+                    <label for="resumo">Resumo do Curriculum</label>
+                    <textarea name="resumo" id="resumo" maxlength="1000" required="required"></textarea><
+                </div>
+                <div class="form-vitae">
+                    <label for="cargo">Cargo</label>
+                    <input type="text" name="cargo" maxlength="40" required="required" id="cargo">
+                </div>
+                <div class="form-vitae">
+                    <label for="descrition">Descrição do Cargo</label>
+                    <input type="text" name="discricao" id="descrition" maxlength="500" required="required">
+                </div>
+                <div class="form-vitae">
+                    <label for="data">data de inicio</label>
+                    <input type="text" name="data" id="data">
+                </div>
+                <div class="form-vitae">
+                    <button type="submit" class="button">submit</button>
+                </div>
+                <div class="form-vitae">
+                    <button class="clear" value="Reset">Limpar</button>
+                </div>
+                <div>
+                    <h2>Resumo Formulario</h2>
+                    <p class="resumo"></p>
+                </div>
+        </form>
         </fieldset>
     </section>
 <script src="script.js"></script>
