@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clickCount</title>
+    <style>
+        header {
+            text-align: center;
+            font-size: 30pt;
+            color: gray;
+        }
+        section {
+            width: 80%;
+            min-height: 60vh;
+            border-radius: 10px;
+            background-color: rgb(153, 153, 153);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container button {
+            color: rgb(93, 92, 92);
+            border: none;
+            cursor: pointer;
+            width: 150px;
+            height: 36px;
+            font-size: 15pt;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px black;
+        }
+        #res {
+            color: white;
+            font-size: 30pt;
+            flex-direction: column;
+            position: absolute;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>clickCount</h1>
+    </header>
+
+<section class="master-top">
+<div class="container">
+    <button class="bt">click</button>
+    <button class="reset">reset</button>
+</div> 
+<div id="res"></div>
+</section>
+<script>
+  let contador = 0;
+  document.querySelector('.bt').addEventListener('click', () => {
+      contador = contador + 1
+      document.getElementById('res').innerHTML = contador
+  })
+  document.querySelector('.reset').addEventListener('click', () => {
+    document.getElementById('res').innerHTML = contador = 0
+  })
+  
+</script>
+</body>
+
+
+</html>
